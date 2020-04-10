@@ -2,6 +2,7 @@ from .bot import QQBot
 from .config import Config
 from .rss import FeedWatcher
 from .tool import Tool
+from .translate import Translate
 
 import logging
 logging.basicConfig(level=logging.DEBUG,

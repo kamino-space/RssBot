@@ -6,10 +6,14 @@ import requests
 import threading
 import time
 import base64
+import socket
 
 from .tool import Tool
 from .bot import QQBot
+from .translate import Translate
 from bs4 import BeautifulSoup
+
+socket.setdefaulttimeout(5)
 
 
 class FeedWatcher(object):
@@ -34,7 +38,7 @@ class FeedWatcher(object):
         else:
             logging.info('查找更新 %s' % task['url'])
             updates = []
-            rss = feedparser.parse(Tool.get_rsshub_host()+task['url'], request_headers={
+            rss = feedparser.parse(Tool.get_rsshub_host(task['platform'])+task['url'], request_headers={
                 'X-Forwarded-For': Tool.get_fake_ip()
             })
             publisher = rss.channel.title
@@ -50,6 +54,8 @@ class FeedWatcher(object):
                         update)
                     message = "%s 更新了!\n" % publisher
                     message += "内容:\n%s\n" % title
+                    if task['translate']:
+                        message += "翻译:\n%s\n" % Translate.to_chinese(title)
                     for image in images:
                         message += "[CQ:image,file=base64://%s]\n" % image
                     message += "时间:%s" % time
@@ -87,8 +93,15 @@ class FeedWatcher(object):
 
     def run_task_once(self):
         for task in self.tasks:
-            threading.Thread(target=self.fetch_rss_update, args=(task,)).run()
-            time.sleep(5)
+            try:
+                threading.Thread(target=self.fetch_rss_update,
+                                 args=(task,)).run()
+            except Exception as e:
+                logging.error('错误%s' % e)
+                QQBot.send_private_msg(
+                    1019728153, '【RSSBOT错误】\nmessage: %s' % (e))
+            finally:
+                time.sleep(5)
 
     def run(self):
         while True:
