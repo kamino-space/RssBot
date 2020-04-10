@@ -14,9 +14,11 @@
         "title": "instagram-misaka_saki",
         "url": "/instagram/user/misaka_saki",
         "subscriber": {
-            "private": [],
+            "private": [
+                1019728153
+            ],
             "group": [
-                604648948
+                955212685
             ]
         },
         "proxy": true
@@ -36,9 +38,11 @@
         "title": "twitter-saki_misaka0423",
         "url": "/twitter/user/saki_misaka0423",
         "subscriber": {
-            "private": [],
+            "private": [
+                1019728153
+            ],
             "group": [
-                604648948
+                955212685
             ]
         },
         "proxy": true
