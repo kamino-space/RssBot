@@ -61,7 +61,6 @@ class FeedWatcher(object):
                         QQBot.send_group_msg(group_id, message)
 
                     self.rds.set(task['title'], Tool.str_to_time(time))
-            logging.info('结束.等待5分钟')
 
     def load_push_content(self, pub):
         title = pub.title
