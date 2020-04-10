@@ -2,6 +2,7 @@ import time
 import datetime
 import pytz
 import random
+import logging
 
 
 class Tool(object):
@@ -33,4 +34,6 @@ class Tool(object):
             'https://rss.shab.fun',
             'https://www.fulijun.club',
         ]
-        return rsshub[random.randint(0, len(rsshub)-1)]
+        host = rsshub[random.randint(0, len(rsshub)-1)]
+        logging.debug('使用rsshub: %s' % host)
+        return host
