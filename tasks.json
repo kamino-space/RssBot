@@ -14,19 +14,6 @@
         "title": "instagram-misaka_saki",
         "url": "/instagram/user/misaka_saki",
         "subscriber": {
-            "private": [
-                1019728153
-            ],
-            "group": [
-                955212685
-            ]
-        },
-        "proxy": true
-    },
-    {
-        "title": "instagram-aikamino",
-        "url": "/instagram/user/aikamino",
-        "subscriber": {
             "private": [],
             "group": [
                 604648948
@@ -38,11 +25,9 @@
         "title": "twitter-saki_misaka0423",
         "url": "/twitter/user/saki_misaka0423",
         "subscriber": {
-            "private": [
-                1019728153
-            ],
+            "private": [],
             "group": [
-                955212685
+                604648948
             ]
         },
         "proxy": true
@@ -50,6 +35,17 @@
     {
         "title": "twitter-kamino_space",
         "url": "/twitter/user/kamino_space",
+        "subscriber": {
+            "private": [],
+            "group": [
+                604648948
+            ]
+        },
+        "proxy": true
+    },
+    {
+        "title": "instagram-aikamino",
+        "url": "/instagram/user/aikamino",
         "subscriber": {
             "private": [],
             "group": [

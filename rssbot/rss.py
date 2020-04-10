@@ -14,7 +14,6 @@ from bs4 import BeautifulSoup
 
 class FeedWatcher(object):
     tasks = []
-    rsshub = 'https://feed.glaceon.net'
 
     def __init__(self):
         logging.info('连接到redis服务器')
@@ -35,7 +34,9 @@ class FeedWatcher(object):
         else:
             logging.info('查找更新 %s' % task['url'])
             updates = []
-            rss = feedparser.parse(self.rsshub+task['url'])
+            rss = feedparser.parse(Tool.get_rsshub_host()+task['url'], request_headers={
+                'X-Forwarded-For': Tool.get_fake_ip()
+            })
             publisher = rss.channel.title
             for entrie in rss.entries:
                 if int(Tool.str_to_time(entrie.published)) > int(last_push):
