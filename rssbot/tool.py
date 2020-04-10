@@ -29,10 +29,10 @@ class Tool(object):
     def get_rsshub_host():
         rsshub = [
             'https://feed.glaceon.net',
-            'http://rss.qiwihui.com',
-            'http://95.179.142.196',
-            'https://rss.shab.fun',
-            'https://www.fulijun.club',
+            # 'http://rss.qiwihui.com',
+            # 'http://95.179.142.196',
+            # 'https://rss.shab.fun',
+            # 'https://www.fulijun.club',
         ]
         host = rsshub[random.randint(0, len(rsshub)-1)]
         logging.debug('使用rsshub: %s' % host)
