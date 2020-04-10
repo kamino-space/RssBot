@@ -12,9 +12,10 @@ class Translate(object):
                 'http://translate.google.cn/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_CN&q=%s' % text)
             trans = json.loads(response.content)
             result = ""
-            for sentence in trans.sentences:
+            for sentence in trans['sentences']:
                 result += sentence['trans']
                 result += ' '
             return result
-        except Exception:
+        except Exception as e:
+            logging.error('翻译失败 %s' % e)
             return None
