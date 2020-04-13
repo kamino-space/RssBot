@@ -15,7 +15,7 @@ rsshub:
 ```
 ### 编辑 tasks.json
 ```
-{
+[{
     "title": "yande.re",  //任务名称
     "platform": "default",  //用于选择rsshub服务
     "url": "/yande.re/post/popular_recent",  //订阅地址
@@ -26,7 +26,7 @@ rsshub:
         "private": [],  //个人号
         "group": []  //群组号
     }
-}
+}]
 ```
 ### 安装依赖
 ```
