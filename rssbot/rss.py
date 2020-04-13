@@ -7,7 +7,6 @@ import threading
 import time
 import base64
 import socket
-import configparser
 import random
 import yaml
 
