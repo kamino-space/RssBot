@@ -21,24 +21,52 @@
         "translate": true,
         "activate": false,
         "subscriber": {
-            "private": [
-                1019728153
-            ],
-            "group": []
+            "private": [],
+            "group": [
+                955212685
+            ]
         }
     },
     {
-        "title": "instagram-saki_morinana_official",
+        "title": "instagram-morinana_official",
         "platform": "instagram",
         "url": "/instagram/user/morinana_official",
         "proxy": true,
         "translate": true,
         "activate": true,
         "subscriber": {
-            "private": [
-                1019728153
-            ],
-            "group": []
+            "private": [],
+            "group": [
+                604648948
+            ]
+        }
+    },
+    {
+        "title": "instagram-misaka_saki",
+        "platform": "instagram",
+        "url": "/instagram/user/misaka_saki",
+        "proxy": true,
+        "translate": true,
+        "activate": false,
+        "subscriber": {
+            "private": [],
+            "group": [
+                955212685
+            ]
+        }
+    },
+    {
+        "title": "twitter-cute_46minutes",
+        "platform": "twitter",
+        "url": "/twitter/user/cute_46minutes/exclude_rts_replies",
+        "proxy": false,
+        "translate": true,
+        "activate": false,
+        "subscriber": {
+            "private": [],
+            "group": [
+                604648948
+            ]
         }
     }
 ]
