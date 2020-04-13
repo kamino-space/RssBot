@@ -17,6 +17,13 @@ class Tool(object):
         return time.strftime("%a, %d %b %Y %H:%M:%S GMT", timeArray)
 
     @staticmethod
+    def gmt_reformat(t):
+        ts = Tool.str_to_time(t)
+        timeArray = time.localtime(ts)
+        return time.strftime("%Y-%m-%d %H:%M", timeArray)
+
+
+    @staticmethod
     def current_time():
         now = datetime.datetime.now(tz=pytz.timezone('UTC'))
         return int(time.mktime(now.timetuple()))

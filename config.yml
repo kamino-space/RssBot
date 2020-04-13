@@ -1,0 +1,33 @@
+config:
+  CQAPI: http://172.17.0.2:5700
+  REDIS_HOST: 127.0.0.1
+  REDIS_PORT: 6379
+  ADMIN: 1019728153
+  PROXY: http://10.8.0.1:8118
+
+rsshub:
+  default:
+    - https://feed.glaceon.net
+    - https://rss.kokodayo.icu
+  twitter:
+    - https://feed.glaceon.net
+    - https://rss.shab.fun
+    - https://www.fulijun.club
+
+  instagram:
+    - https://feed.glaceon.net
+    - https://rss.nyan.kim
+    - http://rss.5ux.net
+    - http://rsshub.xyz
+    - http://rss.0x404.club
+    - https://xnps.xyz
+    - http://rsshub.sloves.xyz
+    - https://891011.xyz
+    - https://rss.unl.li
+    - https://rsshub.ioiox.com
+    - http://rss.gco.me
+    - http://95.179.142.196
+    - http://rss.eastedia.cc
+    - https://rss.feiyuyu.net
+    - https://rss.nyan.kim
+    - http://rss.5ux.net

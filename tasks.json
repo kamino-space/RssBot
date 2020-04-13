@@ -1,80 +1,44 @@
 [
     {
-        "title": "instagram-morinana_official",
-        "platform": "instagram",
-        "url": "/instagram/user/morinana_official",
-        "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
+        "title": "yande.re",
+        "platform": "default",
+        "url": "/yande.re/post/popular_recent",
         "proxy": true,
-        "translate": true
-    },
-    {
-        "title": "instagram-misaka_saki",
-        "platform": "instagram",
-        "url": "/instagram/user/misaka_saki",
+        "translate": false,
+        "activate": true,
         "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
-        "proxy": true,
-        "translate": true
+            "private": [
+                1019728153
+            ],
+            "group": []
+        }
     },
     {
         "title": "twitter-saki_misaka0423",
         "platform": "twitter",
         "url": "/twitter/user/saki_misaka0423/exclude_rts_replies",
+        "proxy": false,
+        "translate": true,
+        "activate": false,
         "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
-        "proxy": true,
-        "translate": true
+            "private": [
+                1019728153
+            ],
+            "group": []
+        }
     },
     {
-        "title": "twitter-kamino_space",
-        "platform": "twitter",
-        "url": "/twitter/user/kamino_space/exclude_rts_replies",
-        "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
-        "proxy": true,
-        "translate": true
-    },
-    {
-        "title": "instagram-aikamino",
+        "title": "instagram-saki_morinana_official",
         "platform": "instagram",
-        "url": "/instagram/user/aikamino",
-        "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
+        "url": "/instagram/user/morinana_official",
         "proxy": true,
-        "translate": true
-    },
-    {
-        "title": "twitter-cute_46minutes",
-        "platform": "twitter",
-        "url": "/twitter/user/cute_46minutes/exclude_rts_replies",
+        "translate": true,
+        "activate": true,
         "subscriber": {
-            "private": [],
-            "group": [
-                604648948
-            ]
-        },
-        "proxy": true,
-        "translate": true
+            "private": [
+                1019728153
+            ],
+            "group": []
+        }
     }
 ]
