@@ -2,7 +2,7 @@
 订阅rsshub并使用coolq推送
 
 ## 使用方法
-1. 编辑 config.yml
+### 编辑 config.yml
 ```
 config:
   CQAPI: http://172.17.0.2:5700 #cqhttp地址
@@ -13,7 +13,7 @@ config:
 rsshub:
  #对应task中的platform
 ```
-2. 编辑 tasks.json
+### 编辑 tasks.json
 ```
 {
     "title": "yande.re",  //任务名称
@@ -28,11 +28,11 @@ rsshub:
     }
 }
 ```
-3. 安装依赖
+### 安装依赖
 ```
 pip install feedparser redis pyyaml cqhttp
 ```
-4. 运行
+### 运行
 ```
 python run.py
 ```
